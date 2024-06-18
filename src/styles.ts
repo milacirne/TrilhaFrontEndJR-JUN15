@@ -34,4 +34,16 @@ export const GlobalStyle = createGlobalStyle`
   .layers {
     background-image: url(${layers});
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .gif {
+      max-width: 100%;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
 `

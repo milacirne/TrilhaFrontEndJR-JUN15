@@ -14,6 +14,11 @@ export const Container = styled.div<Props>`
   justify-content: center;
   margin-bottom: 8px;
   margin-top: ${(props) => props.isFirstBar ? '28px' : '0'};
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 `
 
 export const Icon = styled.img`

@@ -7,7 +7,8 @@ export const Title = styled.h1`
   color: ${colors.black};
   padding: 8px;
   margin-bottom: 24px;
+  border: 3px solid ${colors.black};
   border-radius: 12px;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
 `

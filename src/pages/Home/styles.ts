@@ -5,7 +5,7 @@ import { colors } from '../../styles'
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
   grid-gap: 12px;
   text-align: center;
   color: ${colors.red};
@@ -14,8 +14,14 @@ export const Container = styled.div`
   .grid-item {
     background-color: ${colors.red};
     border-radius: 8px;
+    border: 3px solid ${colors.black};
     padding: 24px 16px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.1), -2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   .big-vertical {
