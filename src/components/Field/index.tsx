@@ -1,14 +1,13 @@
-import { ReactNode } from 'react'
+import * as S from './styles'
 
-import { Field as FieldStyle } from './styles'
-
-interface Props {
-  children: ReactNode
-}
-
-const Field = ({ children } : Props) => {
+const Field = () => {
   return (
-    <FieldStyle>{children}</FieldStyle>
+    <S.Container>
+      <S.Field><span>Nome: </span>Camila Cirne Paulino</S.Field>
+      <S.Field><span>Raça: </span>Programadora</S.Field>
+      <S.Field><span>Classe: </span>Desenvolvedora Front-end</S.Field>
+      <S.Field><span>Idade: </span> 35 anos</S.Field>
+    </S.Container>
   )
 }
 

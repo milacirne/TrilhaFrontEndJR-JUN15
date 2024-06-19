@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <div className='spacer layers'></div>
       <Container>
         <Home />
       </Container>

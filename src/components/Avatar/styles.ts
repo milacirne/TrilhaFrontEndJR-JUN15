@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from '../../styles'
+import { colors, breakpoints } from '../../styles'
 
 export const Avatar = styled.img`
   height: 136px;
@@ -13,5 +13,10 @@ export const Avatar = styled.img`
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+      margin-bottom: 12px;
+      height: 100px;
   }
 `

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from '../../styles'
+import { colors, breakpoints } from '../../styles'
 
 export const Title = styled.h1`
   background-color: ${colors.white};
@@ -11,4 +11,10 @@ export const Title = styled.h1`
   border-radius: 12px;
   text-align: center;
   font-size: 20px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+      font-size: 16px;
+      padding: 4px;
+      margin-bottom: 12px;
+    }
 `

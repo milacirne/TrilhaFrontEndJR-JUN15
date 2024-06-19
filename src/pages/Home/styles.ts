@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Container = styled.div`
   display: grid;
@@ -10,6 +10,15 @@ export const Container = styled.div`
   text-align: center;
   color: ${colors.red};
   height: 100%;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
 
   .grid-item {
     background-color: ${colors.red};
@@ -21,16 +30,48 @@ export const Container = styled.div`
 
     &:hover {
       transform: scale(1.02);
+
+      @media (max-width: ${breakpoints.desktop}) {
+        pointer-events: none;
+      }
+    }
+
+    @media (max-width: ${breakpoints.desktop}) {
+      padding: 16px;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-bottom: 4px;
+      padding: 8px;
     }
   }
 
-  .big-vertical {
+  :nth-child(1) {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
   }
 
-  .big-horizontal {
+  :nth-child(2) {
     grid-column: 2 / span 2;
     grid-row: 1 / span 1;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      grid-column: 1 / span 2;
+      grid-row: 3 / span 1;
+    }
+  }
+
+  :nth-child(3) {
+    @media (max-width: ${breakpoints.desktop}) {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+    }
+  }
+
+  :nth-child(4) {
+    @media (max-width: ${breakpoints.desktop}) {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+    }
   }
 `

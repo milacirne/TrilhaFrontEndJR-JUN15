@@ -1,6 +1,17 @@
 import styled from 'styled-components'
 
-import { colors } from '../../styles'
+import { colors, breakpoints } from '../../styles'
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    align-items: center;
+  }
+`
 
 export const Field = styled.p`
   color: ${colors.white};
@@ -11,5 +22,9 @@ export const Field = styled.p`
 
   span {
     font-weight: 700;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 14px;
   }
 `
