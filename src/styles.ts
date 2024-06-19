@@ -31,9 +31,6 @@ export const GlobalStyle = createGlobalStyle`
 
     @media (max-width: ${breakpoints.desktop}) {
       height: auto;
-    }
-
-    @media (max-width: ${breakpoints.tablet}) {
       overflow-y: auto;
     }
   }
