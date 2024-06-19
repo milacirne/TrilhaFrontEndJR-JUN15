@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Container>
-        <Home />
-      </Container>
+        <Container>
+          <Home />
+        </Container>
     </>
 
   )

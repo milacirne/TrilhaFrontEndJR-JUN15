@@ -21,10 +21,10 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  body {
+  html, body {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     background-color: ${colors.black};
     overflow-y: hidden;
@@ -37,4 +37,5 @@ export const GlobalStyle = createGlobalStyle`
       overflow-y: auto;
     }
   }
+
 `
