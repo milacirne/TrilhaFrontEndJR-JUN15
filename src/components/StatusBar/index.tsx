@@ -12,7 +12,7 @@ const StatusBar = ({ icon, progress, isFirstBar, isLastBar } : Props) => {
       <S.StatusBar progress={progress}>
         <div className='progressBar' />
       </S.StatusBar>
-      <S.Icon src={icon} />
+      <S.Icon src={icon} alt={icon} />
     </S.Container>
   )
 }

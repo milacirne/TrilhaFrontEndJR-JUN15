@@ -10,12 +10,12 @@ import travel from '../../assets/hobbies/travel.svg'
 const Hobbie = () => {
   return (
     <S.Container>
-      <li><S.Icon src={sushi}/></li>
-      <li><S.Icon src={series}/></li>
-      <li><S.Icon src={controller}/></li>
-      <li><S.Icon src={dice}/></li>
-      <li><S.Icon src={cat}/></li>
-      <li><S.Icon src={travel}/></li>
+      <li><S.Icon src={sushi} alt='Sushi'/></li>
+      <li><S.Icon src={series} alt='Sofa e Pipoca'/></li>
+      <li><S.Icon src={controller} alt='Controle de Video-Game'/></li>
+      <li><S.Icon src={dice} alt='Dado de RPG'/></li>
+      <li><S.Icon src={cat} alt='Gato'/></li>
+      <li><S.Icon src={travel} alt='Avião viajando'/></li>
     </S.Container>
   )
 }

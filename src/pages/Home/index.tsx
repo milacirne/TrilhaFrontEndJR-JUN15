@@ -6,12 +6,14 @@ import StatusBar from "../../components/StatusBar"
 import Text from "../../components/Text"
 import Hobbie from "../../components/Hobbie"
 
-import intelligence from '../../assets/icons/intelligence.svg'
-import defense from '../../assets/icons/defense.svg'
-import hp from '../../assets/icons/hp.svg'
-import mana from '../../assets/icons/mana.svg'
-import initiative from '../../assets/icons/initiative.svg'
 import trainer from '../../assets/trainer.gif'
+
+// Importação em português por causa do atributo alt da imagem
+import Inteligencia from '../../assets/icons/intelligence.svg'
+import Defesa from '../../assets/icons/defense.svg'
+import Vida from '../../assets/icons/hp.svg'
+import Mana from '../../assets/icons/mana.svg'
+import Iniciativa from '../../assets/icons/initiative.svg'
 
 import * as S from "./styles"
 
@@ -23,11 +25,11 @@ const Home = () => {
         <Title>FICHA DE PERSONAGEM</Title>
         <Avatar />
         <Field />
-        <StatusBar progress={75} icon={hp} isFirstBar></StatusBar>
-        <StatusBar progress={60} icon={intelligence}></StatusBar>
-        <StatusBar progress={50} icon={defense}></StatusBar>
-        <StatusBar progress={80} icon={mana}></StatusBar>
-        <StatusBar progress={85} icon={initiative} isLastBar></StatusBar>
+        <StatusBar progress={75} icon={Vida} isFirstBar></StatusBar>
+        <StatusBar progress={60} icon={Inteligencia}></StatusBar>
+        <StatusBar progress={50} icon={Defesa}></StatusBar>
+        <StatusBar progress={80} icon={Mana}></StatusBar>
+        <StatusBar progress={85} icon={Iniciativa} isLastBar></StatusBar>
       </section>
       <section className="grid-item">
         <div className="subtitle-container">
