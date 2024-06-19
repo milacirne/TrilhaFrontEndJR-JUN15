@@ -15,12 +15,13 @@ export const Container = styled.div`
 
     @media (max-width: ${breakpoints.desktop}) {
       width: 80%;
+      margin: 32px auto 0;
     }
 
     @media (max-width: ${breakpoints.tablet}) {
       padding: 4px 4px 0;
-      margin: 32px auto;
       min-width: 320px;
+      margin: 32px auto;
     }
 
     .subtitle-container {
