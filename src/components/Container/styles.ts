@@ -34,7 +34,7 @@ export const Container = styled.div`
         border-radius: 5px;
 
         @media (max-width: ${breakpoints.tablet}) {
-          height: 32px;
+          height: 24px;
         }
       }
     }

@@ -8,6 +8,6 @@ export const Subtitle = styled.h2`
   font-size: 18px;
 
   @media (max-width: ${breakpoints.tablet}) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `

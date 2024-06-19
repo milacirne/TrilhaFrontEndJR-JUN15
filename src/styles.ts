@@ -29,6 +29,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${colors.black};
     overflow-y: hidden;
 
+    @media (max-width: ${breakpoints.desktop}) {
+      overflow-y: auto;
+    }
+
     @media (max-width: ${breakpoints.tablet}) {
       height: auto;
       overflow-y: auto;
