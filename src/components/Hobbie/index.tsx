@@ -10,12 +10,12 @@ import travel from '../../assets/hobbies/travel.svg'
 const Hobbie = () => {
   return (
     <S.Container>
-      <S.Icon src={sushi}/>
-      <S.Icon src={series}/>
-      <S.Icon src={controller}/>
-      <S.Icon src={dice}/>
-      <S.Icon src={cat}/>
-      <S.Icon src={travel}/>
+      <li><S.Icon src={sushi}/></li>
+      <li><S.Icon src={series}/></li>
+      <li><S.Icon src={controller}/></li>
+      <li><S.Icon src={dice}/></li>
+      <li><S.Icon src={cat}/></li>
+      <li><S.Icon src={travel}/></li>
     </S.Container>
   )
 }

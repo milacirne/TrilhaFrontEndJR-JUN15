@@ -13,6 +13,10 @@ export const Avatar = styled.img`
 
   &:hover {
     transform: scale(1.05);
+
+    @media (max-width: ${breakpoints.desktop}) {
+        transform: none;
+    }
   }
 
   @media (max-width: ${breakpoints.tablet}) {

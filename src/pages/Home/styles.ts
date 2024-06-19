@@ -32,7 +32,7 @@ export const Container = styled.div`
       transform: scale(1.02);
 
       @media (max-width: ${breakpoints.desktop}) {
-        pointer-events: none;
+        transform: none;
       }
     }
 

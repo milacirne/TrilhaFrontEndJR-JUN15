@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { colors, breakpoints } from '../../styles'
 
-export const Container = styled.div`
+export const Container = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,7 @@ export const Container = styled.div`
   }
 `
 
-export const Field = styled.p`
+export const Field = styled.li`
   color: ${colors.white};
   font-size: 16px;
   font-weight: 300;

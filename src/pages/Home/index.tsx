@@ -34,7 +34,7 @@ const Home = () => {
           <Subtitle>A jornada por trás da heroína</Subtitle>
           <img src={trainer} className="gif"/>
         </div>
-        <Text isFirstText>Camila é uma jovem que respira tecnologia. Aos dez anos, já criava websites com o Microsoft Front Page, revelando uma paixão inata pelo mundo digital.</Text>
+        <Text isFirstText>Camila é uma jovem geek apaixonada por tecnologia. Aos dez anos, já criava websites com o Microsoft Front Page, revelando uma paixão inata pelo mundo digital.</Text>
         <Text>Após uma jornada enriquecedora na Irlanda, onde aprimorou seu inglês e ampliou seus horizontes, Camila decidiu trilhar um novo caminho: o Desenvolvimento Front-End.</Text>
         <Text>Determinada a dominar o código, ela iniciou sua jornada com um curso de Desenvolvimento Full Stack. Sua mente ágil, alimentada por cursos online e bootcamps, equipou-a para construir um futuro brilhante no mundo digital.</Text>
         <Text isLastText>O objetivo de Camila hoje é evoluir e se tornar uma mestra do código, pronta para desvendar os segredos da programação e criar soluções inovadoras para ajudar as pessoas. Sua paixão pela tecnologia e sua mente perspicaz são suas maiores armas, guiando-a em sua aventura épica.</Text>

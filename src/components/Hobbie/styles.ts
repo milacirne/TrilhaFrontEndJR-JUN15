@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { breakpoints } from '../../styles'
 
-export const Container = styled.div`
+export const Container = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -24,6 +24,10 @@ export const Icon = styled.img`
 
   &:hover {
     transform: scale(1.10);
+
+    @media (max-width: ${breakpoints.desktop}) {
+        transform: none;
+    }
   }
 
   @media (max-width: ${breakpoints.tablet}) {
