@@ -13,7 +13,7 @@ export const Container = styled.div<Props>`
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-top: ${(props) => props.isFirstBar ? '28px' : '0'};
+  margin-top: ${(props) => props.isFirstBar ? '18px' : '0'};
   margin-bottom: ${(props) => props.isLastBar ? '0' : '8px'};
   transition: transform 0.3s ease-in-out;
 

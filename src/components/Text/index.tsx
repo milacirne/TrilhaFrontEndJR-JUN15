@@ -6,9 +6,9 @@ interface Props extends PropsStyles {
   children: ReactNode
 }
 
-const Text = ({ children, isFirstText } : Props) => {
+const Text = ({ children, isFirstText, isLastText } : Props) => {
   return (
-    <TextStyle isFirstText={isFirstText}>{children}</TextStyle>
+    <TextStyle isFirstText={isFirstText} isLastText={isLastText}>{children}</TextStyle>
   )
 }
 

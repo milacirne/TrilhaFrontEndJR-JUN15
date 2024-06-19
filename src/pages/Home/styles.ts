@@ -24,7 +24,7 @@ export const Container = styled.div`
     background-color: ${colors.red};
     border-radius: 8px;
     border: 3px solid ${colors.black};
-    padding: 24px 16px;
+    padding: 16px;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1), 2px 0 4px rgba(0, 0, 0, 0.1), -2px 0 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 
@@ -34,10 +34,6 @@ export const Container = styled.div`
       @media (max-width: ${breakpoints.desktop}) {
         pointer-events: none;
       }
-    }
-
-    @media (max-width: ${breakpoints.desktop}) {
-      padding: 16px;
     }
 
     @media (max-width: ${breakpoints.tablet}) {

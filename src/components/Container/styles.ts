@@ -6,7 +6,7 @@ export const Container = styled.div`
     margin: auto;
     padding: 12px;
     width: 1048px;
-    height: 656px;
+    height: auto;
     background-color: ${colors.white};
     color: ${colors.red};
     border: 3px solid ${colors.black};
@@ -15,12 +15,12 @@ export const Container = styled.div`
 
     @media (max-width: ${breakpoints.desktop}) {
       width: 80%;
-      height: auto;
     }
 
     @media (max-width: ${breakpoints.tablet}) {
       padding: 4px 4px 0;
       margin: 32px auto;
+      min-width: 320px;
     }
 
     .subtitle-container {
@@ -34,7 +34,7 @@ export const Container = styled.div`
         border-radius: 5px;
 
         @media (max-width: ${breakpoints.tablet}) {
-          height: 24px;
+          height: 20px;
         }
       }
     }

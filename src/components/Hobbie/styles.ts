@@ -10,7 +10,7 @@ export const Container = styled.div`
   align-items: center;
   row-gap: 24px;
   column-gap: 32px;
-  margin-top: 32px;
+  margin-top: 28px;
 
   @media (max-width: ${breakpoints.tablet}) {
     margin-top: 24px;
